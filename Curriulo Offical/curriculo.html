@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Currículo de Christofer Mayon</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #333;
+      }
+      h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+      h2 {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+      p,
+      li {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .foto {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .dados-pessoais {
+        display: flex;
+        align-items: center;
+      }
+      .dados-pessoais div {
+        margin-left: 20px;
+      }
+      .dados-pessoais a {
+        color: #333;
+        text-decoration: none;
+      }
+      .dados-pessoais a:hover {
+        text-decoration: underline;
+      }
+      .secao {
+        border-bottom: 1px solid #ccc;
+      }
+      .experiencia,
+      .formacao,
+      .idiomas {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 10px;
+      }
+      .experiencia div,
+      .formacao div,
+      .idiomas div {
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .experiencia p,
+      .formacao p,
+      .idiomas p {
+        margin: 0;
+      }
+      .periodo {
+        font-weight: bold;
+      }
+      .nivel {
+        display: inline-block;
+        width: 100px;
+        height: 20px;
+        border: 1px solid #333;
+        border-radius: 10px;
+        position: relative;
+      }
+      .nivel::before {
+        content: '';
+        display: block;
+        height: 100%;
+        border-radius: 10px;
+        background-color: #333;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .basico::before {
+        width: 25%;
+      }
+      .intermediario::before {
+        width: 50%;
+      }
+      .avancado::before {
+        width: 75%;
+      }
+      .fluente::before {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="secao dados-pessoais">
+        <img
+          src="https://media.licdn.com/dms/image/D4E03AQGeyF1L6c0P1Q/profile-displayphoto-shrink_800_800/0/1676304991141?e=2147483647&v=beta&t=eVHTZn9VSi00Rol3jichkc31BSn39QOUy_cxbVJHmeA"
+          alt=""
+          class="foto"
+        />
+        <div>
+          <h1>Christofer Mayon Efigenio Palini</h1>
+          <p>Estudante de Analise e desenvolvimento de sistemas</p>
+          <p><a href="mailto:fulano@gmail.com">ef.cristofer92@gmail.com</a></p>
+          <p>
+            <a href="https://github.com/ChristoferMayon"
+              >https://github.com/ChristoferMayon</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/christofer-mayon-efigenio-palini-889049264/"
+              >Linkedin Christofer Mayon</a
+            >
+          </p>
+          <p>
+            <a href="https://wa.me/+5541995457772">WhatsApp 41-995457772</a>
+          </p>
+        </div>
+      </div>
+      <div class="secao experiencia">
+        <h2>Experiência Profissional</h2>
+        <div>
+          <h3>Iniciante Desenvolvedor Web iniciante</h3>
+          <p class="periodo">Janeiro de 2024 - Presente</p>
+          <p></p>
+          <ul>
+            <li>
+              Iniciante Desenvolvimento de sites e aplicações web usando HTML,
+              CSS, JavaScript e PHP.
+            </li>
+            <li>Manutenção e atualização de sistemas existentes.</li>
+            <li>Teste e depuração de código.</li>
+            <li>.</li>
+          </ul>
+        </div>
+        <div></div>
+      </div>
+      <div class="secao formacao">
+        <h2>Formação Acadêmica</h2>
+
+        <div>
+          <div>Cursando</div>
+          <h3>Graduação em Analise e desenvolvimento de sistemas</h3>
+          <p class="periodo">2023 - 2025</p>
+          <p>Universidade Estacio de sá</p>
+          <p>Previsão de conclusão: julho de 2025</p>
+        </div>
+        <div>
+          <h3>Curso de Desenvolvimento Web</h3>
+          <p class="periodo">2023</p>
+          <p>One BitCod</p>
+          <p>Carga horária: 40 horas</p>
+          <div>HTML-JAVA-CSS-PHP</div>
+        </div>
+      </div>
+      <div class="secao idiomas">
+        <h2>Idiomas</h2>
+        <div>
+          <h3>Inglês Iniciante</h3>
+          <p>Escrita: Regular <span class="nivel intermediario"></span></p>
+          <p>Fala: Iniciante <span class="nivel intermediario"></span></p>
+          <p>Leitura:Basico <span class="nivel avancado"></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
